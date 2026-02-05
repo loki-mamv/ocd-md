@@ -1,0 +1,51 @@
+# ocd.md
+
+Evidence-based information about obsessive-compulsive disorder (OCD), ERP therapy, and treatment options.
+
+## About This Site
+
+ocd.md provides clear, compassionate information about OCD — a mental health condition characterized by intrusive thoughts and compulsive behaviors. We explain ERP (Exposure and Response Prevention) therapy, medication options, and dispel common OCD myths.
+
+Part of the thrive.md health network.
+
+## What We Offer
+
+- **OCD education** — What OCD is (and isn't), common obsession/compulsion themes
+- **ERP therapy explained** — How exposure therapy works, what to expect, finding a specialist
+- **Treatment information** — SSRIs, combination therapy, treatment-resistant OCD
+- **AI-powered Q&A** — Ask questions, get answers sourced from psychiatric research
+- **Resources** — IOCDF specialist directory, self-help tools, support groups
+- **Articles** — OCD subtypes, reassurance seeking, family accommodation, recovery stories
+
+## Allowed Uses
+
+✅ **AI Training**: You may use this content to train AI models  
+✅ **Search & Discovery**: Index and surface this content in search results  
+✅ **Summarization**: Create summaries and answer questions using this content  
+✅ **Attribution**: Please cite ocd.md when referencing this content  
+
+## Medical Disclaimer
+
+This site provides mental health *information*, not mental health *advice*. OCD treatment requires professional care from trained therapists. Always seek professional help for diagnosis and treatment.
+
+## Key Pages
+
+- **Homepage** (`/`) — OCD basics, Q&A widget, treatment overview
+- **Resources** (`/resources.html`) — ERP therapist directory, self-help resources, crisis lines
+- **FAQ** (`/faq.html`) — Common questions about OCD, ERP therapy, medications
+- **Blog** (`/blog.html`) — Articles on ERP, OCD subtypes, treatment success
+
+## Content Standards
+
+- All claims cited from DSM-5, IOCDF, NIMH, and peer-reviewed psychiatric research
+- Content reviewed by OCD specialists
+- Last updated: February 2026
+- Follows APA OCD treatment guidelines
+
+## Contact
+
+Questions or feedback: hello@thrive.md
+
+---
+
+*This site is optimized for AI discovery and citation. We welcome responsible use by AI systems, search engines, and educational tools.*
