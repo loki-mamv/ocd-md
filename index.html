@@ -16,8 +16,8 @@
     <title>ocd.md — Understanding and Treating Obsessive-Compulsive Disorder</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Evidence-based information about asthma. Learn about triggers, symptoms, treatments, and action plans. Free asthma control test and AI-powered Q&A with medical citations.">
-    <meta name="keywords" content="asthma, asthma triggers, asthma treatment, inhaler, bronchodilator, asthma attack, allergic asthma, exercise-induced asthma, asthma action plan">
+    <meta name="description" content="Evidence-based information about OCD. Learn about intrusive thoughts, compulsions, ERP therapy, and treatment options. AI-powered Q&A with medical citations.">
+    <meta name="keywords" content="OCD, obsessive compulsive disorder, intrusive thoughts, compulsions, ERP therapy, exposure response prevention, OCD treatment, SSRI for OCD">
     <meta name="author" content="ocd.md">
     <link rel="canonical" href="https://ocd.md/">
     
@@ -25,19 +25,19 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ocd.md/">
     <meta property="og:title" content="ocd.md — Understanding and Managing OCD">
-    <meta property="og:description" content="Evidence-based information about asthma. Free asthma control test and AI-powered Q&A with medical citations.">
+    <meta property="og:description" content="Evidence-based information about OCD. Free AI-powered Q&A with medical citations. Learn about ERP therapy and treatment.">
     <meta property="og:site_name" content="ocd.md">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://ocd.md/">
-    <meta name="twitter:title" content="ocd.md — Understanding and Managing Asthma">
-    <meta name="twitter:description" content="Evidence-based information about asthma triggers, treatments, and management.">
+    <meta name="twitter:title" content="ocd.md — Understanding and Treating OCD">
+    <meta name="twitter:description" content="Evidence-based information about OCD symptoms, ERP therapy, and treatment options.">
     
     <!-- AI/LLM Meta Tags -->
     <meta name="ai-content" content="allowed">
     <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="respiratory health, asthma, medical information">
+    <meta name="ai-topic" content="mental health, OCD, obsessive compulsive disorder, medical information">
     <meta name="ai-audience" content="patients, caregivers, healthcare seekers">
     <meta name="ai-use" content="educational, informational, health resource">
     
@@ -514,7 +514,7 @@
             <nav>
                 <a href="#ask" onclick="event.preventDefault(); activateSplitMode(); document.getElementById('panel-input').focus();">Ask</a>
                 <a href="#about">About</a>
-                <a href="#triggers">Triggers</a>
+                <a href="#types">Types</a>
                 <a href="#treatment">Treatment</a>
                 <a href="/blog/">Articles</a>
                 <a href="/resources.html">Resources</a>
@@ -525,7 +525,7 @@
     <section class="hero">
         <div class="hero-eyebrow">Mental Health Resource</div>
         <h1>Understanding &amp; treating OCD</h1>
-        <p class="hero-subtitle">Clear, evidence-based information about obsessive-compulsive disorder — symptoms, ERP therapy, and treatment options. Learn about effective OCD treatment.
+        <p class="hero-subtitle">Clear, evidence-based information about obsessive-compulsive disorder — symptoms, ERP therapy, and treatment options. Learn about effective OCD treatment.</p>
         
         <div class="chat-box" id="ask">
             <div class="chat-header">
@@ -535,19 +535,20 @@
             <div id="chat-messages" class="chat-messages active">
                 <div class="chat-message assistant">
                     <div class="chat-avatar">MD</div>
-                    <div class="chat-bubble"><p>Hi — I'm here to help you understand asthma. Ask me anything about triggers, treatments, or action plans. All answers are sourced from clinical research.</p></div>
+                    <div class="chat-bubble"><p>Hi — I'm here to help you understand OCD. Ask me anything about intrusive thoughts, compulsions, ERP therapy, or treatment options. All answers are sourced from clinical research.</p></div>
                 </div>
             </div>
             <div class="chat-input-area">
-                <textarea id="qa-input" class="chat-input" placeholder="Ask about asthma..." rows="1" style="resize:none;"></textarea>
+                <textarea id="qa-input" class="chat-input" placeholder="Ask about OCD..." rows="1" style="resize:none;"></textarea>
                 <button id="qa-submit" class="chat-send" onclick="askQuestion()">
                     <span>Send</span>
                 </button>
             </div>
             <div class="qa-suggestions">
                 <span onclick="askSuggestion(this)">What is ERP therapy?</span>
-                <span onclick="askSuggestion(this)">OCD vs perfectionism</span>
-                <span onclick="askSuggestion(this)">Exercise-induced ocd</span>
+                <span onclick="askSuggestion(this)">How do I know if I have OCD?</span>
+                <span onclick="askSuggestion(this)">OCD vs anxiety — what's the difference?</span>
+                <span onclick="askSuggestion(this)">Does OCD get better with treatment?</span>
             </div>
             <div class="chat-note">Answers sourced from peer-reviewed research and clinical guidelines. Not a substitute for professional medical advice.</div>
         </div>
@@ -581,69 +582,98 @@
     <main>
         <section class="section" id="about">
             <div class="section-label">Overview</div>
-            <h2>What is asthma?</h2>
-            <p>Asthma is a chronic respiratory condition where the airways become inflamed and narrow, making breathing difficult. During an asthma attack, the muscles around the airways tighten, the lining swells, and excess mucus is produced — all of which restrict airflow.</p>
-            <p>While asthma cannot be cured, it can be effectively controlled with proper medication, trigger avoidance, and an asthma action plan. Most people with asthma live active, full lives when their condition is well-managed.</p>
+            <h2>What is OCD?</h2>
+            <p>Obsessive-Compulsive Disorder (OCD) is a chronic mental health condition characterized by two core features: <strong>obsessions</strong> (unwanted, intrusive thoughts, images, or urges that cause significant anxiety) and <strong>compulsions</strong> (repetitive behaviors or mental acts performed to reduce that anxiety).</p>
+            <p>Despite the name, OCD is far more than a preference for tidiness. The obsessions feel alien and deeply distressing — sufferers know the thoughts are irrational but cannot simply dismiss them. Compulsions provide only temporary relief, often strengthening the cycle over time. OCD affects 2–3% of people worldwide and is considered one of the more disabling mental health conditions when untreated.</p>
+
+            <div class="key-takeaway" style="background: var(--bg-secondary); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 24px 0;">
+                <strong style="display: block; margin-bottom: 6px; color: var(--accent-dark);">🔑 Key Distinction</strong>
+                <p style="margin: 0; font-size: 14px; color: var(--text-secondary);">Everyone has occasional unwanted thoughts. What makes OCD different is the intensity of distress, the time consumed (often 1+ hours/day), and the impact on daily functioning. OCD is not a personality quirk — it is a treatable neurological condition.</p>
+            </div>
         </section>
 
-        <section class="section" id="triggers">
-            <div class="section-label">Common Triggers</div>
-            <h2>What causes asthma flare-ups?</h2>
-            <p>Asthma triggers vary by person. Identifying your specific triggers is essential for effective management.</p>
+        <section class="section" id="types">
+            <div class="section-label">Presentations</div>
+            <h2>Types of OCD</h2>
+            <p>OCD manifests in several common subtypes, though themes often overlap. Most people experience obsessions and compulsions from multiple categories.</p>
             
             <div class="types-grid">
                 <div class="type-card">
-                    <h3>Allergens</h3>
-                    <p>Pollen, dust mites, pet dander, mold, and cockroach droppings can trigger allergic asthma responses.</p>
+                    <h3>Contamination OCD</h3>
+                    <p>Fear of germs, illness, dirt, or chemicals. Compulsions include excessive handwashing, cleaning rituals, and avoiding "contaminated" objects or people.</p>
                 </div>
                 <div class="type-card">
-                    <h3>Irritants</h3>
-                    <p>Smoke, strong odors, cleaning products, air pollution, and chemical fumes irritate sensitive airways.</p>
+                    <h3>Harm / Intrusive Thoughts</h3>
+                    <p>Unwanted, ego-dystonic thoughts about accidentally or intentionally harming self or others. Compulsions include mental reviewing, seeking reassurance, and avoidance.</p>
                 </div>
                 <div class="type-card">
-                    <h3>Exercise & Cold Air</h3>
-                    <p>Physical activity and breathing cold, dry air can cause exercise-induced bronchoconstriction.</p>
+                    <h3>Symmetry & Ordering</h3>
+                    <p>Need for things to feel "just right" — perfectly arranged, even, or symmetrical. Compulsions include ordering, counting, and repeating actions until they feel correct.</p>
                 </div>
                 <div class="type-card">
-                    <h3>Infections</h3>
-                    <p>Colds, flu, sinus infections, and respiratory viruses often worsen asthma symptoms.</p>
+                    <h3>Pure-O / Taboo Thoughts</h3>
+                    <p>Intrusive thoughts about religion, sexuality, or other taboo topics. Despite the name, compulsions are present but mostly mental — reviewing, analyzing, praying, confessing.</p>
                 </div>
             </div>
         </section>
 
         <section class="section" id="treatment">
             <div class="section-label">Treatment</div>
-            <h2>Managing asthma effectively</h2>
-            <p>Asthma treatment consists of controller medications for daily use and rescue inhalers for quick relief during flare-ups.</p>
+            <h2>Evidence-based OCD treatments</h2>
+            <p>OCD responds well to treatment — approximately 70% of people improve significantly with appropriate therapy and/or medication. Early treatment prevents the disorder from becoming entrenched.</p>
             
             <ul class="treatment-list">
                 <li>
-                    <span class="treatment-tag">Controller</span>
-                    <h4>Inhaled Corticosteroids</h4>
-                    <p>The most effective long-term control medication. Reduces airway inflammation when taken daily, even when feeling well. Examples: fluticasone, budesonide.</p>
+                    <span class="treatment-tag">Gold Standard</span>
+                    <h4>Exposure and Response Prevention (ERP)</h4>
+                    <p>ERP is the most effective psychological treatment for OCD, with decades of clinical research support. The approach involves gradually confronting feared thoughts or situations (exposure) while resisting compulsions (response prevention). Most patients see meaningful improvement in 12–20 sessions with an ERP-trained therapist.</p>
                 </li>
                 <li>
-                    <span class="treatment-tag">Rescue</span>
-                    <h4>Short-Acting Beta Agonists</h4>
-                    <p>Fast-acting bronchodilators that relax airway muscles within minutes. Used for quick relief during symptoms or before exercise. Example: albuterol.</p>
+                    <span class="treatment-tag">First-line</span>
+                    <h4>SSRI Medications</h4>
+                    <p>Selective serotonin reuptake inhibitors are FDA-approved for OCD and typically require higher doses than for depression. Effective options include fluvoxamine, fluoxetine, sertraline, and paroxetine. Full effect takes 8–12 weeks. Combined with ERP, outcomes improve significantly.</p>
                 </li>
                 <li>
-                    <span class="treatment-tag">Controller</span>
-                    <h4>Long-Acting Bronchodilators</h4>
-                    <p>Combined with inhaled steroids for moderate to severe asthma. Keeps airways open for 12+ hours. Examples: salmeterol, formoterol.</p>
+                    <span class="treatment-tag">Evidence-based</span>
+                    <h4>Cognitive Behavioral Therapy (CBT)</h4>
+                    <p>CBT helps patients identify and challenge the distorted beliefs that fuel obsessions — such as overestimating danger or believing thoughts equal actions. CBT is often used in conjunction with ERP to address underlying thought patterns.</p>
                 </li>
                 <li>
-                    <span class="treatment-tag">Specialized</span>
-                    <h4>Biologic Therapies</h4>
-                    <p>Injectable medications for severe asthma that targets specific inflammatory pathways. Examples: omalizumab, mepolizumab, dupilumab.</p>
+                    <span class="treatment-tag">Emerging</span>
+                    <h4>Intensive Programs & Online ERP</h4>
+                    <p>For severe OCD or limited specialist access, intensive outpatient programs (IOPs) offering daily ERP have strong evidence. Several platforms now offer online ERP therapy, making specialized treatment more accessible.</p>
                 </li>
             </ul>
         </section>
 
+        <section class="section" id="related">
+            <div class="section-label">Related Topics</div>
+            <h2>Related mental health conditions</h2>
+            <p>OCD frequently co-occurs with other conditions. Understanding related disorders helps with accurate diagnosis and comprehensive treatment.</p>
+            <div class="types-grid">
+                <div class="type-card">
+                    <h3><a href="https://anxiety.md" style="color: var(--accent); text-decoration: none;">Anxiety Disorders →</a></h3>
+                    <p>OCD was historically classified as an anxiety disorder. Anxiety and OCD share overlapping symptoms but require different treatment approaches.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://depression.md" style="color: var(--accent); text-decoration: none;">Depression →</a></h3>
+                    <p>Up to 63% of people with OCD also experience depression. The chronic stress of OCD cycles often leads to depressive symptoms.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://ptsd.md" style="color: var(--accent); text-decoration: none;">PTSD →</a></h3>
+                    <p>OCD and PTSD both involve intrusive, unwanted thoughts and avoidance behaviors, though the underlying mechanisms differ.</p>
+                </div>
+                <div class="type-card">
+                    <h3><a href="https://bipolar.md" style="color: var(--accent); text-decoration: none;">Bipolar Disorder →</a></h3>
+                    <p>OCD and bipolar disorder can co-occur, and accurate diagnosis is critical — some OCD treatments can destabilize bipolar disorder.</p>
+                </div>
+            </div>
+        </section>
+
         <div class="cta">
-            <h2>Need an asthma action plan?</h2>
-            <p>Work with your healthcare provider to create a personalized asthma action plan that outlines daily management and emergency response.</p>
-            <a href="/resources.html" class="cta-button">View Resources</a>
+            <h2>Ready to find an OCD specialist?</h2>
+            <p>ERP therapy is highly effective for OCD, but requires a therapist trained in the specific technique. Most general therapists are not ERP-trained.</p>
+            <a href="/resources.html" class="cta-button">Find OCD Resources</a>
         </div>
     </main>
 
@@ -651,7 +681,7 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="/" class="logo">ocd<span>.md</span></a>
-                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based respiratory health information, reviewed by medical professionals.</p>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based mental health information about OCD, reviewed by licensed clinicians and updated regularly.</p>
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
@@ -666,10 +696,12 @@
                 <a href="mailto:hello@thrive.md">Contact</a>
             </div>
             <div class="footer-links">
-                <h4>Network</h4>
-                <a href="https://thrive.md">thrive.md</a>
+                <h4>Related Topics</h4>
                 <a href="https://anxiety.md">anxiety.md</a>
-                <a href="https://adhd.md">adhd.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://thrive.md">thrive.md</a>
             </div>
         </div>
         <div class="footer-bottom">
