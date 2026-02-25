@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ocd.md/blog/contamination-ocd/#article"},
           "wordCount": "712",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is contamination OCD the same as germaphobia?", "acceptedAnswer": {"@type": "Answer", "text": "Not exactly. Germaphobia (mysophobia) involves fear of germs specifically. Contamination OCD can involve germs but also extends to chemicals, emotional contamination, moral contamination, and abstract 'dirtiness.' The key distinction is the compulsive cycle \u2014 contamination OCD involves ritualistic behaviors and mental acts, not just avoidance."}}, {"@type": "Question", "name": "Did COVID make contamination OCD worse?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Research published during and after the pandemic showed significant symptom worsening in people with pre-existing contamination OCD. The public health messaging about handwashing and surface cleaning directly reinforced OCD behaviors, and the genuine threat made it harder to distinguish reasonable precaution from compulsion."}}, {"@type": "Question", "name": "Can contamination OCD be cured?", "acceptedAnswer": {"@type": "Answer", "text": "ERP produces significant improvement in 60-80% of cases. Many people achieve functional remission \u2014 intrusive thoughts may occasionally occur but no longer drive compulsive behavior or significant distress. Some people maintain gains for years; others benefit from periodic booster sessions."}}, {"@type": "Question", "name": "Why does washing never feel 'enough'?", "acceptedAnswer": {"@type": "Answer", "text": "OCD shifts the goalposts. The compulsion targets a subjective feeling of contamination, not an objective standard of cleanliness. Each time you wash to satisfaction, OCD adjusts the threshold \u2014 demanding more washing, more thoroughness, more repetitions. This is why behavioral change (stopping the washing) works better than doing the washing 'right.'"}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

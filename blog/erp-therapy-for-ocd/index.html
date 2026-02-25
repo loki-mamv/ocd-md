@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://ocd.md/blog/erp-therapy-for-ocd/#article"},
           "wordCount": "804",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Does ERP cure OCD?", "acceptedAnswer": {"@type": "Answer", "text": "ERP doesn't eliminate intrusive thoughts, but it dramatically reduces their power and frequency. Most people who complete ERP experience 50-80% symptom reduction. Many achieve remission. Occasional intrusive thoughts may still occur, but without the compulsive cycle, they pass quickly."}}, {"@type": "Question", "name": "Is ERP traumatic?", "acceptedAnswer": {"@type": "Answer", "text": "ERP is uncomfortable but not traumatic when done correctly. Exposures are graduated (starting easy), collaborative (you have input), and controlled (you can pause). The distress is temporary and purposeful. A skilled ERP therapist will never force you into an exposure you haven't agreed to."}}, {"@type": "Question", "name": "Can I do ERP on my own?", "acceptedAnswer": {"@type": "Answer", "text": "Self-directed ERP is possible with proper resources (books like 'Freedom from OCD' by Jonathan Grayson or apps like NOCD). However, therapist-guided ERP is more effective because a trained clinician can design appropriate exposures, prevent subtle avoidance, and adjust the pace. Self-help works best for mild OCD or as a supplement to professional treatment."}}, {"@type": "Question", "name": "How do I find an ERP therapist?", "acceptedAnswer": {"@type": "Answer", "text": "The IOCDF therapist directory (iocdf.org/find-help) is the most reliable source. NOCD offers telehealth ERP nationwide. When interviewing therapists, ask directly: 'Do you use ERP for OCD? What percentage of your practice is OCD?' If they can't articulate an ERP approach, keep looking."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
