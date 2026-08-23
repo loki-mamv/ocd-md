@@ -61,107 +61,145 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://ocd.md/#website",
-          "url": "https://ocd.md",
-          "name": "ocd.md — Understanding and Treating OCD",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
-        },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://ocd.md/#webpage",
-          "name": "Understanding and Treating OCD",
-          "description": "Evidence-based information about OCD — intrusive thoughts, compulsions, ERP therapy, and treatment options.",
-          "url": "https://ocd.md/",
-          "isPartOf": {"@id": "https://ocd.md/#website"},
-          "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalCondition",
-            "name": "Obsessive-Compulsive Disorder",
-            "alternateName": ["OCD", "Obsessive Compulsive Disorder"],
-            "description": "A chronic mental health condition characterized by intrusive obsessions and repetitive compulsions that cause significant distress and impair daily functioning.",
-            "possibleTreatment": [
-              {"@type": "MedicalTherapy", "name": "Exposure and Response Prevention (ERP)"},
-              {"@type": "MedicalTherapy", "name": "SSRI Medications"},
-              {"@type": "MedicalTherapy", "name": "Cognitive Behavioral Therapy (CBT)"},
-              {"@type": "MedicalTherapy", "name": "Intensive Outpatient Programs"}
-            ],
-            "riskFactor": [
-              {"@type": "MedicalRiskFactor", "name": "Family history of OCD"},
-              {"@type": "MedicalRiskFactor", "name": "Stressful or traumatic life events"},
-              {"@type": "MedicalRiskFactor", "name": "Other mental health conditions"}
-            ],
-            "epidemiology": "Affects 2-3% of the population worldwide; average onset age 19"
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ocd.md/#website",
+      "url": "https://ocd.md",
+      "name": "ocd.md — Understanding and Treating OCD",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://ocd.md/#webpage",
+      "name": "Understanding and Treating OCD",
+      "description": "Evidence-based information about OCD — intrusive thoughts, compulsions, ERP therapy, and treatment options.",
+      "url": "https://ocd.md/",
+      "isPartOf": {
+        "@id": "https://ocd.md/#website"
+      },
+      "lastReviewed": "2026-02-20",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalCondition",
+        "name": "Obsessive-Compulsive Disorder",
+        "alternateName": [
+          "OCD",
+          "Obsessive Compulsive Disorder"
+        ],
+        "description": "A chronic mental health condition characterized by intrusive obsessions and repetitive compulsions that cause significant distress and impair daily functioning.",
+        "possibleTreatment": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "Exposure and Response Prevention (ERP)"
           },
-          "about": {
-            "@type": "MedicalCondition",
-            "name": "Obsessive-Compulsive Disorder"
+          {
+            "@type": "MedicalTherapy",
+            "name": "SSRI Medications"
           },
-          "audience": {
-            "@type": "PeopleAudience",
-            "healthCondition": {
-              "@type": "MedicalCondition",
-              "name": "Obsessive-Compulsive Disorder"
-            }
+          {
+            "@type": "MedicalTherapy",
+            "name": "Cognitive Behavioral Therapy (CBT)"
           },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".hero h1", ".hero-subtitle", ".stat-number"]
+          {
+            "@type": "MedicalTherapy",
+            "name": "Intensive Outpatient Programs"
+          }
+        ],
+        "riskFactor": [
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Family history of OCD"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Stressful or traumatic life events"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Other mental health conditions"
+          }
+        ],
+        "epidemiology": "Affects 2-3% of the population worldwide; average onset age 19"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Obsessive-Compulsive Disorder"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "healthCondition": {
+          "@type": "MedicalCondition",
+          "name": "Obsessive-Compulsive Disorder"
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero h1",
+          ".hero-subtitle",
+          ".stat-number"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ocd.md/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ERP therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exposure and Response Prevention (ERP) is the gold-standard psychological treatment for OCD. It involves gradually confronting feared thoughts or situations (exposure) while resisting the urge to perform compulsions (response prevention). Most patients see significant improvement in 12-20 sessions with a trained ERP therapist."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://ocd.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is ERP therapy?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Exposure and Response Prevention (ERP) is the gold-standard psychological treatment for OCD. It involves gradually confronting feared thoughts or situations (exposure) while resisting the urge to perform compulsions (response prevention). Most patients see significant improvement in 12-20 sessions with a trained ERP therapist."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I know if I have OCD?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "OCD is characterized by obsessions (intrusive, unwanted thoughts that cause significant distress) and compulsions (repetitive behaviors or mental acts performed to reduce anxiety). If intrusive thoughts consume 1+ hour per day and significantly impair your daily life, consult a mental health professional for a proper evaluation."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does OCD get better with treatment?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Approximately 70% of people with OCD respond significantly to evidence-based treatment. ERP therapy and SSRI medications are both effective, and combined treatment produces the best outcomes. While OCD is a chronic condition, many people achieve substantial symptom reduction and improved quality of life."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between OCD and anxiety?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "While OCD was historically classified as an anxiety disorder, it is now in its own category. Anxiety involves excessive worry about real-world situations; OCD involves intrusive, ego-dystonic thoughts followed by compulsive rituals to neutralize them. They require different treatment approaches — OCD responds to ERP, while generalized anxiety responds better to standard CBT."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "How do I know if I have OCD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OCD is characterized by obsessions (intrusive, unwanted thoughts that cause significant distress) and compulsions (repetitive behaviors or mental acts performed to reduce anxiety). If intrusive thoughts consume 1+ hour per day and significantly impair your daily life, consult a mental health professional for a proper evaluation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OCD get better with treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Approximately 70% of people with OCD respond significantly to evidence-based treatment. ERP therapy and SSRI medications are both effective, and combined treatment produces the best outcomes. While OCD is a chronic condition, many people achieve substantial symptom reduction and improved quality of life."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between OCD and anxiety?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While OCD was historically classified as an anxiety disorder, it is now in its own category. Anxiety involves excessive worry about real-world situations; OCD involves intrusive, ego-dystonic thoughts followed by compulsive rituals to neutralize them. They require different treatment approaches — OCD responds to ERP, while generalized anxiety responds better to standard CBT."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -557,7 +595,7 @@
                 <a href="#types">Types</a>
                 <a href="#treatment">Treatment</a>
                 <a href="/blog/">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/blog/">Resources</a>
             </nav>
         </div>
     </header>
@@ -685,6 +723,16 @@
                 </li>
             </ul>
         </section>
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What is the difference between OCD and anxiety?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">While OCD was historically classified as an anxiety disorder, it is now in its own category. Anxiety involves excessive worry about real-world situations; OCD involves intrusive, ego-dystonic thoughts followed by compulsive rituals to neutralize them. They require different treatment approaches — OCD responds to ERP, while generalized anxiety responds better to standard CBT.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="related">
             <div class="section-label">Related Topics</div>
@@ -721,7 +769,7 @@
         <div class="cta">
             <h2>Ready to find an OCD specialist?</h2>
             <p>ERP therapy is highly effective for OCD, but requires a therapist trained in the specific technique. Most general therapists are not ERP-trained.</p>
-            <a href="/resources.html" class="cta-button">Find OCD Resources</a>
+            <a href="/blog/" class="cta-button">Find OCD Resources</a>
         </div>
     </main>
 
@@ -763,8 +811,8 @@
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
-                <a href="/resources.html">Resource Library</a>
-                <a href="/faq.html">Common Questions</a>
+                <a href="/blog/">Resource Library</a>
+                <a href="/">Common Questions</a>
                 <a href="/blog/">Articles</a>
             </div>
             <div class="footer-links">
