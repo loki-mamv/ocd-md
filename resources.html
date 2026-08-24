@@ -1,15 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S');gtag('config','G-RJBV2HHMVD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-6H85DH0R8S');gtag('config','G-RJBV2HHMVD');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources — ocd.md</title>
-    <link rel="canonical" href="https://ocd.md/blog/">
-    <meta http-equiv="refresh" content="0; url=https://ocd.md/blog/">
-    <style>body{font-family:'Inter',-apple-system,system-ui,sans-serif;color:#0f172a;max-width:640px;margin:0 auto;padding:96px 24px;line-height:1.7}a{color:#0d9488}</style>
+    <title>OCD Resources — Finding ERP Therapy, Support, and Reading</title>
+    <meta name="description" content="Vetted OCD resources: the International OCD Foundation, NIMH, ERP therapist directories, support organizations, and crisis lines.">
+    <link rel="canonical" href="https://ocd.md/resources.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px; margin: 0 auto; padding: 16px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display); font-size: 22px; font-weight: 600;
+            color: var(--text-primary); text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 14px; font-weight: 500; transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        .page-header {
+            max-width: 720px; margin: 0 auto; padding: 80px 24px 48px;
+        }
+        h1 {
+            font-family: var(--font-display); font-size: 42px;
+            font-weight: 700; margin-bottom: 16px;
+        }
+        .page-intro {
+            font-size: 18px; color: var(--text-secondary); line-height: 1.7;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 0 24px 64px; }
+        .resource-section {
+            margin-bottom: 56px;
+        }
+        .resource-section h2 {
+            font-family: var(--font-display); font-size: 28px;
+            font-weight: 700; margin-bottom: 24px;
+        }
+        .resource-list {
+            border-top: 1px solid var(--border);
+        }
+        .resource-item {
+            padding: 24px 0; border-bottom: 1px solid var(--border);
+        }
+        .resource-item h3 {
+            font-family: var(--font-display); font-size: 18px;
+            font-weight: 600; margin-bottom: 6px;
+        }
+        .resource-item h3 a {
+            color: var(--text-primary); text-decoration: none;
+            transition: color 0.2s;
+        }
+        .resource-item h3 a:hover { color: var(--accent); }
+        .resource-item p {
+            font-size: 15px; color: var(--text-secondary); line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .resource-meta {
+            font-size: 13px; color: var(--text-muted);
+        }
+        .emergency-box {
+            background: #fee; border: 2px solid #d33;
+            border-radius: 12px; padding: 24px; margin: 32px 0;
+        }
+        .emergency-box h3 {
+            font-family: var(--font-display); font-size: 20px;
+            color: #d33; margin-bottom: 12px;
+        }
+        .emergency-box p {
+            font-size: 15px; color: #600; line-height: 1.6; margin-bottom: 12px;
+        }
+        .emergency-box strong { font-size: 18px; display: block; margin-top: 8px; }
+        footer {
+            background: var(--bg-secondary); border-top: 1px solid var(--border);
+            padding: 48px 24px; margin-top: 64px;
+        }
+        .footer-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+        }
+        .footer-brand .logo { display: inline-block; margin-bottom: 12px; }
+        .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .footer-links h4 {
+            font-size: 12px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.5px; margin-bottom: 12px;
+        }
+        .footer-links a {
+            display: block; color: var(--text-muted); text-decoration: none;
+            font-size: 14px; margin-bottom: 8px; transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom {
+            max-width: 1100px; margin: 32px auto 0; padding-top: 24px;
+            border-top: 1px solid var(--border); display: flex;
+            justify-content: space-between; font-size: 13px; color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            h1 { font-size: 32px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+        }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://ocd.md/resources.html",
+  "url": "https://ocd.md/resources.html",
+  "name": "OCD Resources — Finding ERP Therapy, Support, and Reading",
+  "description": "Vetted OCD resources: the International OCD Foundation, NIMH, ERP therapist directories, support organizations, and crisis lines.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://thrive.md/#organization",
+    "name": "thrive.md",
+    "url": "https://thrive.md"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "name": "International OCD Foundation — Find Help",
+      "url": "https://iocdf.org/find-help/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "International OCD Foundation",
+      "url": "https://iocdf.org/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "NIMH — Obsessive-Compulsive Disorder",
+      "url": "https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Anxiety & Depression Association of America — OCD",
+      "url": "https://adaa.org/understanding-anxiety/obsessive-compulsive-disorder-ocd"
+    },
+    {
+      "@type": "WebPage",
+      "name": "988 Suicide & Crisis Lifeline",
+      "url": "https://988lifeline.org/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ocd.md",
+      "item": "https://ocd.md/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://ocd.md/resources.html"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <p>This page has moved to <a href="https://ocd.md/blog/">https://ocd.md/blog/</a>.</p>
-    <script>window.location.replace("https://ocd.md/blog/");</script>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">ocd<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/resources.html">Resources</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <div class="page-header">
+        <h1>OCD Resources</h1>
+        <p class="page-intro">Organizations, directories, and reading worth your time. Everything here comes from a government health agency or an established OCD organization.</p>
+    </div>
+    <main>
+        <div class="emergency-box">
+            <h3>⚠️ If you are in crisis</h3>
+            <p>• Thoughts of suicide or of harming yourself<br>• Feeling unable to keep yourself safe<br>• A mental health emergency of any kind</p>
+            <strong>Call or text 988 (Suicide &amp; Crisis Lifeline) — free and available 24/7. Call 911 in an immediate emergency.</strong>
+        </div>
+        <section class="resource-section">
+            <h2>Finding Treatment</h2>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3><a href="https://iocdf.org/find-help/" target="_blank" rel="noopener">International OCD Foundation — Find Help</a></h3>
+                    <p>The main directory of therapists, clinics, and intensive programs with specific OCD training. Searchable by location and treatment type.</p>
+                    <span class="resource-meta">Free directory • US and international</span>
+                </div>
+                <div class="resource-item">
+                    <h3><a href="https://iocdf.org/" target="_blank" rel="noopener">International OCD Foundation</a></h3>
+                    <p>The leading OCD organization: what ERP is, how to evaluate a provider, resources for families, and an annual conference.</p>
+                    <span class="resource-meta">Free • Patient and family resources</span>
+                </div>
+                <div class="resource-item">
+                    <h3><a href="https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd" target="_blank" rel="noopener">NIMH — Obsessive-Compulsive Disorder</a></h3>
+                    <p>The NIH institute overview: signs and symptoms, prevalence data, treatment options, and how to join a clinical trial.</p>
+                    <span class="resource-meta">Free • Government source</span>
+                </div>
+            </div>
+        </section>
+        <section class="resource-section">
+            <h2>Support &amp; Education</h2>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3><a href="https://adaa.org/understanding-anxiety/obsessive-compulsive-disorder-ocd" target="_blank" rel="noopener">Anxiety &amp; Depression Association of America — OCD</a></h3>
+                    <p>Patient-facing explainers and a therapist directory covering OCD alongside related anxiety conditions.</p>
+                    <span class="resource-meta">Free • Includes peer support communities</span>
+                </div>
+                <div class="resource-item">
+                    <h3><a href="https://988lifeline.org/" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></h3>
+                    <p>Free, confidential crisis support by call, text, or chat, 24 hours a day, anywhere in the United States.</p>
+                    <span class="resource-meta">Free • 24/7 • Call or text 988</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="email-capture" style="background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%); border: 1px solid #ccfbf1; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #0f172a; margin-bottom: 0.25rem;">Get evidence-based health updates</p>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1rem;">No spam. Unsubscribe anytime.</p>
+        <form class="email-form" style="display: flex; gap: 0.5rem; max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;" onsubmit="submitEmail(event)">
+            <input type="email" name="email" placeholder="you@example.com" required style="flex: 1; min-width: 200px; padding: 0.6rem 1rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; outline: none;">
+            <input type="hidden" name="source" value="ocd.md">
+            <button type="submit" style="padding: 0.6rem 1.5rem; background: #0d9488; color: white; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 500; cursor: pointer;">Subscribe</button>
+        </form>
+        <p class="email-success" style="display: none; color: #0d9488; margin-top: 0.75rem; font-weight: 500;">✓ You're in! Check your inbox.</p>
+    </div>
+    <script>
+    function submitEmail(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        fetch('https://script.google.com/macros/s/AKfycbwUqO3zauyG_tuCZk0NALIDybayC7JhTbSm7RcQhivv6Lq0XCrQ8YgopTFqXjMSwt72/exec', {
+            method: 'POST', body: data, mode: 'no-cors'
+        }).then(() => {
+            form.style.display = 'none';
+            form.parentElement.querySelector('.email-success').style.display = 'block';
+        });
+    }
+    </script>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">ocd<span>.md</span></a>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/resources.html">Resource Library</a>
+                <a href="/faq.html">Common Questions</a>
+                <a href="/blog/">Articles</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="https://thrive.md/disclaimer.html">Medical Disclaimer</a>
+                <a href="https://thrive.md/privacy.html">Privacy</a>
+                <a href="https://thrive.md/terms.html">Terms</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Network</h4>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://adhd.md">adhd.md</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ocd.md</p>
+            <p>Medical information, not medical advice</p>
+        </div>
+    </footer>
 </body>
 </html>
